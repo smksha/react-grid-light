@@ -1,0 +1,32 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.grid {
+  display: grid;
+  max-width: 300px;
+  border: 1px solid black;
+  padding: 20px;
+  width: 100%;
+  gap: 20px;
+}
+.cell {
+  background-color: transparent;
+  border: 1px solid black;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 0;
+}
+
+.cell_active {
+  background-color: green;
+  pointer-events: none;
+}
